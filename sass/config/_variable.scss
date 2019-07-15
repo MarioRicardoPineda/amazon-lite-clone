@@ -1,0 +1,37 @@
+
+// Configuracion de paleta de colores
+
+// Oscuros
+$color-dark-1 : #222E3D;
+$color-dark-2: #232F3D;
+$color-dark-3 : #374759;
+$color-link : #1472C5;
+
+// Amarillos
+$color-moz-1 : #FF9900;
+$color-moz-2 : #FCBC70;
+$color-moz-3 : #F1CB74;
+
+.bgc-dark-1{
+    background-color: $color-dark-1 !important;
+}
+.bgc-dark-2{
+    background-color: $color-dark-2 !important;
+}
+.bgc-dark-3{
+    background-color: $color-dark-3 !important;
+}
+
+.bgc-moz-1{
+    background-color: $color-moz-1 !important;
+}
+.bgc-moz-2{
+    background-color: $color-moz-2 !important;
+}
+.bgc-moz-3{
+    background-color: $color-moz-3 !important;
+}
+
+.txt-white{
+    color: #fff;
+}

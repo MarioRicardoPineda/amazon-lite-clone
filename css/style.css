@@ -1,0 +1,105 @@
+.bgc-dark-1 {
+  background-color: #222E3D !important;
+}
+
+.bgc-dark-2 {
+  background-color: #232F3D !important;
+}
+
+.bgc-dark-3 {
+  background-color: #374759 !important;
+}
+
+.bgc-moz-1 {
+  background-color: #FF9900 !important;
+}
+
+.bgc-moz-2 {
+  background-color: #FCBC70 !important;
+}
+
+.bgc-moz-3 {
+  background-color: #F1CB74 !important;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+}
+
+.border {
+  border: 1px solid #FF9900 !important;
+}
+
+.nav-w {
+  width: 100%;
+}
+
+.form-w {
+  width: 90%;
+}
+
+.input-w {
+  width: 60% !important;
+}
+
+.banner {
+  height: 55vh;
+  background-image: url("../img/bg-home.png");
+  margin-bottom: 10em;
+  position: relative;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+}
+.container-flex .card {
+  width: 23%;
+}
+
+.slider-1 {
+  width: 90%;
+  margin: 0 auto;
+  height: 30vh;
+  background-color: #fff;
+  margin-bottom: 10em;
+  padding: 2em;
+}
+.slider-1 .image-slider {
+  height: 20vh;
+}
+
+.footer .title-footer {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.footer ul {
+  list-style: none;
+  margin: 5px;
+}
+
+.formulario {
+  border: 1px solid #cdcdcd;
+  padding: 2em;
+}
+.formulario p {
+  font-size: 14px;
+  margin: 15px;
+}
+
+.footer-log {
+  flex-basis: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
