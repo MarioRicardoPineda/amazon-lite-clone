@@ -102,4 +102,16 @@ body {
   flex-basis: 100%;
 }
 
+.img-w {
+  width: 10%;
+}
+
+.fa-star {
+  color: #FCBC70;
+}
+
+.card-title {
+  font-size: 14px !important;
+}
+
 /*# sourceMappingURL=style.css.map */

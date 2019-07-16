@@ -1,182 +1,573 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Detalle producto</title>
 
-     <!-- Styles from Bootstrap -->
-     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Styles from Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-     <!-- Styles from porject local -->
-     <link rel="stylesheet" href="./css/style.css">
- 
-     <!-- File js - JQuery v3.4.0 -->
-     <script src="./js/jquery-3.4.0.min.js"></script>
-     <!-- File JS - Bootstrap -->
-     <script src="./js/bootstrap.min.js"></script>
- 
-     <!-- Script, para fontAwesome -->
-     <script src="https://kit.fontawesome.com/fa9cda3c98.js"></script>
- </head>
- 
- <body>
- 
-     <!-- Header -->
-     <header class="container-fluid ">
-         <div class="row ">
-             <nav class="navbar navbar-expand-lg navbar-light bg-light nav-w bgc-dark-2">
-                 <a class="navbar-brand" href="#">
-                     <img src="./img/imagelogo-white.png" alt="">
-                 </a>
-                 <button class="navbar-toggler" type="button" data-toggle="collapse"
-                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                     aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                 </button>
- 
-                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav mr-auto">
-                         <li class="nav-item active">
-                             <div class="dropdown">
-                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
-                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     TODOSS
-                                 </button>
-                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                     <a class="dropdown-item" href="#!">Action</a>
-                                     <a class="dropdown-item" href="#!">Another action</a>
-                                 </div>
-                             </div>
-                         </li>
-                         <!-- <li class="nav-item">
+    <!-- Styles from porject local -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- File js - JQuery v3.4.0 -->
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <!-- File JS - Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Script, para fontAwesome -->
+    <script src="https://kit.fontawesome.com/fa9cda3c98.js"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="container-fluid ">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-w bgc-dark-2">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/imagelogo-white.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    TODOSS
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
                                <a class="nav-link" href="#">Link</a>
                              </li> -->
-                     </ul>
-                     <form class="form-inline my-2 my-lg-0 form-w">
-                         <input class="form-control mr-sm-8 input-w" type="text" placeholder="Buscar"
-                             aria-label="Search">
-                         <button class="btn my-2 my-sm-0 bgc-moz-2" type="submit"><i class="fa fa-search"></i></button>
-                         <a href="#s" class="txt-white">Servicio al Cliente 24/7. Más información</a>
-                     </form>
-                 </div>
-             </nav>
-         </div>
- 
-         <div class="row">
- 
-             <ul class="nav nav-pills bgc-dark-2 nav-w">
-                 <li class="nav-item">
-                     <a class="nav-link txt-white" href="#!"><i class="fa fa-map-marker-alt"></i> El salvador</li></a>
-                 </li>
-                 <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle txt-white" data-toggle="dropdown" href="#" role="button"
-                         aria-haspopup="true" aria-expanded="false">Departamento</a>
-                     <div class="dropdown-menu">
-                         <a class="dropdown-item" href="#!">San Salvador</a>
-                         <a class="dropdown-item" href="#!">San Miguel</a>
-                         <a class="dropdown-item" href="#!">La paz</a>
-                         <a class="dropdown-item" href="#!">La Unión</a>
-                     </div>
-                 </li>
- 
-                 <li class="nav-item">
-                     <a href="#s" class="nav-link txt-white">Ofertas Del día</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#s" class="nav-link txt-white">Tuamazon.com</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#s" class="nav-link txt-white">Tarjeta de regalo</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#s" class="nav-link txt-white">Ayuda</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#s" class="nav-link txt-white">Lista</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#s" class="nav-link txt-white">Vender</a>
-                 </li>
-                 <li class="nav-item dropdown ">
-                     <a class="nav-link dropdown-toggle txt-white" data-toggle="dropdown" href="#" role="button"
-                         aria-haspopup="true" aria-expanded="false">Cuenta y Lista</a>
-                     <div class="dropdown-menu">
-                         <a class="dropdown-item" href="#!">Action</a>
-                         <a class="dropdown-item" href="#!">Another action</a>
-                     </div>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link txt-white" href="#!">pedido</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link txt-white" href="#!"><i class="fa fa-shopping-cart"></i> Carrito</a>
-                 </li>
- 
- 
-             </ul>
-         </div>
-     </header>
- 
-     <!-- Footer -->
-     <footer class="footer">
-         <div class="init text-center bgc-dark-3 txt-white p-2">
-             <p>Inicio de página</p>
-         </div>
- 
-         <div class="container-fluid txt-white">
-             <div class="row bgc-dark-2">
-                 <article class="col-3 ">
-                     <ul>
-                         <li class="title-footer">Conócenos</li>
-                         <li>Trabaja en Amazon</li>
-                         <li>Blog</li>
-                         <li>Acerca de Amazon</li>
-                         <li>Relación con los inversionistas</li>
-                         <li>Dispositivos Amazon</li>
-                         <li>Visita un centro lógistico en Amazon</li>
-                     </ul>
-                 </article>
-                 <article class="col-3">
-                     <ul>
-                         <li class="title-footer">Gana dinero con nosotros</li>
-                         <li>Vende en Amazon</li>
-                         <li>Vende tus servicios en Amazon</li>
-                         <li>Vende en Amazon Business</li>
-                         <li>Vende Tus App en Amazon</li>
-                         <li>Programa de afiliados</li>
-                         <li>Anuncia tus productos</li>
-                         <li>Publica tu libro de kindle</li>
-                         <li>> Ver mas</li>
-                     </ul>
-                 </article>
-                 <article class="col-3">
-                     <ul>
-                         <li class="title-footer">producto de pago Amazon</li>
-                         <li>Compra con puntos</li>
-                         <li>Recarga de saldo</li>
-                         <li>Converidor de moneda Amazon</li>
-                     </ul>
-                 </article>
-                 <article class="col-3">
-                     <ul>
-                         <li class="title-footer">Podemos ayudarte</li>
-                         <li>Tu cuenta</li>
-                         <li>tus pedidos</li>
-                         <li>Tarifa de envios y politicas</li>
-                         <li>Devoluciones y remplazos</li>
-                         <li>Administrar dispositivos</li>
-                         <li>Amazon assistant</li>
-                         <li>Ayuda</li>
-                     </ul>
-                 </article>
-                 <div class="col-12 text-center">
-                     <img src="./img/imagelogo-white.png" alt="">
-                 </div>
-             </div>
-         </div>
-     </footer>
- </body>
- 
- </html>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 form-w">
+                        <input class="form-control mr-sm-8 input-w" type="text" placeholder="Buscar"
+                            aria-label="Search">
+                        <button class="btn my-2 my-sm-0 bgc-moz-2" type="submit"><i class="fa fa-search"></i></button>
+                        <a href="#s" class="txt-white">Servicio al Cliente 24/7. Más información</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+
+            <ul class="nav nav-pills bgc-dark-2 nav-w">
+                <li class="nav-item">
+                    <a class="nav-link txt-white" href="#!"><i class="fa fa-map-marker-alt"></i> El salvador</li></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txt-white" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Departamento</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#!">San Salvador</a>
+                        <a class="dropdown-item" href="#!">San Miguel</a>
+                        <a class="dropdown-item" href="#!">La paz</a>
+                        <a class="dropdown-item" href="#!">La Unión</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#s" class="nav-link txt-white">Ofertas Del día</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#s" class="nav-link txt-white">Tuamazon.com</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#s" class="nav-link txt-white">Tarjeta de regalo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#s" class="nav-link txt-white">Ayuda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#s" class="nav-link txt-white">Lista</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#s" class="nav-link txt-white">Vender</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle txt-white" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Cuenta y Lista</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#!">Action</a>
+                        <a class="dropdown-item" href="#!">Another action</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link txt-white" href="#!">pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link txt-white" href="#!"><i class="fa fa-shopping-cart"></i> Carrito</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </header>
+    <br>
+    <br>
+
+    <!-- Main -->
+    <main class="container-fluid">
+        <!-- detalles del producto -->
+        <div class="row">
+
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top" src="./img/toalla-blanca.jpg" alt="Card image cap">
+                    <div class="card-body text-center" style="font-size: 14px; color: #aaa;"> Pasa el mosue encima de la
+                        imagen par aaplicar zoom </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <article>
+                    <p>Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad, impreso, bolsillo
+                        profundo, antiarrugas, resistente al desgaste y a las manchas, hipoalergénico, 4 piezas,
+                        Microfibra, Celeste (Baby Blue), gemelo</p>
+                    <p>De <a href="#s"> Mellani</a></p>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <a href="#s">55,000 opiniones de clientes </a>|<a href="#s"> más de 1000+ preguntas
+                            respondidas</a>
+                    </p>
+                </article>
+                <hr>
+                <!-- Seleccion de tallas -->
+                <p class="h5">Disponible a través de <a href="#s">Estos vendedores</a></p>
+                <div class="botones">
+                    <p>tamaño: <b>Twin</b></p>
+                    <button class="btn">Twin</button>
+                    <button class="btn">Twin xl</button>
+                    <button class="btn">full</button>
+                    <button class="btn">Queen</button>
+                    <button class="btn">King</button>
+                    <button class="btn">California King</button>
+                    <button class="btn">Split king</button>
+                </div>
+
+                <!-- Detalles del producto -->
+                <div class="detalles">
+                    <div class="imagenes-producto">
+                        <p>Color: <b>Blue Hydrangea</b></p>
+                        <div class="imgs">
+                            <img src="./img/toalla-blanca.jpg" alt="" class="img-w">
+                            <img src="./img/toalla-blanca.jpg" alt="" class="img-w">
+                            <img src="./img/toalla-blanca.jpg" alt="" class="img-w">
+                            <img src="./img/toalla-blanca.jpg" alt="" class="img-w">
+                        </div>
+                        <ul>
+                            <li>
+                                100% Poliester
+                            </li>
+                            <li>
+                                Importado
+                            </li>
+                            <li>
+                                Siente la diferencia, duerme mejor y despierta cada mañana sintiéndote renovado y lleno
+                                de energía. Sedoso suave, más cómodo y hojas de cama de lujo que puedes encontrar. Lo
+                                mejor para cualquier habitación de tu casa, habitación, habitación de huéspedes, sala de
+                                niños, RV, casa de día festivo. Idea de regalo para hombres y mujeres, madres y padres
+                                día del padre, de San Valentín y la Navidad.
+                            </li>
+                            <li>
+                                Tamaño Queen, juego de cama de 4 piezas, 1 sábana lisa de 102 x 90 pulgadas, 1 sábana
+                                bajera de 80 x 60 pulgadas, 2 fundas de almohada de 20 x 30 pulgadas. Sábana ajustable
+                                con bolsillo profundo con elástico alrededor (no sólo las esquinas, como otras sábanas).
+                                Se adapta a colchones de hasta 16 pulgadas.
+                            </li>
+                            <li>
+                                Fácil cuidado, resistente a manchas, la decoloración, resistente a las arrugas. Lavable
+                                a máquina en frío. Se seca rápido en secadora baja. Más duradero que el algodón.
+                                Hipoalergénico y resistente a los ácaros del polvo.
+                            </li>
+                            <li>
+                                Más alta calidad: hecho de los materiales de la más alta calidad y mano de obra, por eso
+                                sabes lo que dura. La fabulosa selección de colores hará que tu habitación parezca
+                                sacada de una revista.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <h3 class="card-header"><i class="fa fa-dot-circle"></i> Nuevo:</h3>
+                    <div class="card-body">
+                        <p class="card-title">Este artículo no se envía a San Salvador, El Salvador. Verifica otros
+                            vendedores que puedan hacer envios internacionales. <a href="#s">Más información</a> </p>
+
+                        <p class="card-text">
+                            <a href="#s" style="color: #3a1;"> Disponible</a>
+                            <div class="dropdown">
+                                <button class="btn bg-white border-secondary mb-3 dropdown-toggle" type="button"
+                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    cantidad-1
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                </div>
+                            </div>
+
+                            <a href="#!" class="btn bgc-moz-3 text-dark btn-block"><i class="fa fa-shopping-cart"></i>
+                                Añadir al carrito</a>
+                            <a href="#!" class="btn bgc-moz-1 text-dark btn-block"><i class="fa fa-play"></i> Comprar
+                                ahora</a>
+
+                        </p>
+                        <p>
+                            vendido y enviada por amazon.com
+                            <br>
+                            <br>
+                            Se puede envolver para regalo
+                        </p>
+                        <hr>
+                        <a href="#s"><i class="fa fa-map-marker"></i> Enviar a Mario san salvador</a>
+                        <br>
+                        <br>
+                        <hr>
+                        <input type="checkbox" id="us">
+                        <label for="us">Usado :</label>
+                        <span> US$ 5.50</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Card -->
+        <div class="row mb-5">
+
+            <h4 class="w-100 mb-3 ml-3">Customers recommend</h4>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/toalla-negra.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <a class="card-title " href="#s">Juego de sábana de cama Mellanni, microfibra </a>
+                        <p class="card-text">
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                            <span class="h3">-</span>
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <a href="#s">55,000</a>
+                        </p>
+                        <p>
+                            <i>
+                                “Great quallity linen. Very satisfied.”
+                                - Amazon Customer</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/toalla-negra.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <a class="card-title " href="#s">Juego de sábana de cama Mellanni, microfibra </a>
+                        <p class="card-text">
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                            <span class="h3">-</span>
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <a href="#s">55,000</a>
+                        </p>
+                        <p>
+                            <i>
+                                “Great quallity linen. Very satisfied.”
+                                - Amazon Customer</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/toalla-negra.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <a class="card-title " href="#s">Juego de sábana de cama Mellanni, microfibra </a>
+                        <p class="card-text">
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                            <span class="h3">-</span>
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <a href="#s">55,000</a>
+                        </p>
+                        <p>
+                            <i>
+                                “Great quallity linen. Very satisfied.”
+                                - Amazon Customer</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/toalla-negra.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <a class="card-title " href="#s">Juego de sábana de cama Mellanni, microfibra </a>
+                        <p class="card-text">
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                            <span class="h3">-</span>
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <a href="#s">55,000</a>
+                        </p>
+                        <p>
+                            <i>
+                                “Great quallity linen. Very satisfied.”
+                                - Amazon Customer</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/toalla-negra.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <a class="card-title " href="#s">Juego de sábana de cama Mellanni, microfibra </a>
+                        <p class="card-text">
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                            <span class="h3">-</span>
+                            <span><sup>USD</sup> <strong class="h4">24</strong> <sup>70</sup></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <a href="#s">55,000</a>
+                        </p>
+                        <p>
+                            <i>
+                                “Great quallity linen. Very satisfied.”
+                                - Amazon Customer</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Formulario -->
+        <div class="row container mb-5">
+            <div class="col-12">
+                <h3>¿Tienes alguna pregunta?</h3> <br>
+                <p>Busca la información del producto, preguntas frecuentes, opniones...</p>
+                <input type="text" class="form-control">
+                <hr>
+            </div>
+
+            <div class="col-10">
+                <h3>Description del producto</h3>
+                <br>
+                <span>Tamaño: Twin </span>|
+                <span>Color: Blue </span>
+                <br>
+                <br>
+                <p>
+                    Juego de sábanas impreso. 100 % de microfibra cepillada de la más alta calidad. <br><br>
+
+                    Deja que la fina ropa de cama Mellanni te envuelva en elegancia, lujo y confort.
+                    El juego de ropa de cama entallado con un diseño cuadrifolio.
+                    Cuidadosamente elaborado para añadir una exquisita clase a tu recámara y mejorar la decoración.
+                    <br><br>
+
+                    Entendemos que tu tiempo es importante, esa es la razón por la cual esta excepcionalmente suave y
+                    fuerte ropa de cama
+                    Es antiarrugas, resistente al desgaste y a las manchas, para que puedas pasar más tiempo en las
+                    cosas importantes de la vida.
+                    Es el ajuste perfecto con cuidado fácil, todo en uno. <br><br>
+
+                    Sábanas de microfibra hipoalergénica, mantiene a las narices tapadas lejos, mientras bloquea
+                    alérgenos no deseados, ácaros del polvo y la humedad.
+                    Deja que tu cuerpo respire mientras te mantienes fresco y cómodo toda la noche. <br>
+
+                    - <br>
+                    -<br>
+
+                    Desplázate hacia arriba y haz clic en añadir al carrito para tu mejor sueño.
+                </p>
+                <hr>
+            </div>
+            <br><br>
+
+            <div class="col-12">
+                <h3>Información del producto</h3>
+                <br>
+                <span>Tamaño: Twin </span>|
+                <span>Color: Blue </span>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-6">
+                        <h4>Garantia y asistencia</h4>
+                        <hr>
+                        <p>
+                            Garantía del producto: Para obtener la información sobre la garantía de este producto,
+                            Product
+                            Warranty: For wararanty information about this product, please <a href="#s">haz clic
+                                aquí</a>
+                        </p>
+                        <br> <br>
+                        <h4>Comentarios</h4>
+                        <hr>
+                        <p>
+                            Si vendes este producto, ¿Te gustaría sugerir actualizaciones mediante el soporte al
+                            vendedor? ¿Quieres informarnos sobre un precio más abajo?
+                        </p>
+                        <br> <br>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="init text-center bgc-dark-3 txt-white p-2">
+            <p>Inicio de página</p>
+        </div>
+
+        <div class="container-fluid txt-white">
+            <div class="row bgc-dark-2">
+                <article class="col-3 ">
+                    <ul>
+                        <li class="title-footer">Conócenos</li>
+                        <li>Trabaja en Amazon</li>
+                        <li>Blog</li>
+                        <li>Acerca de Amazon</li>
+                        <li>Relación con los inversionistas</li>
+                        <li>Dispositivos Amazon</li>
+                        <li>Visita un centro lógistico en Amazon</li>
+                    </ul>
+                </article>
+                <article class="col-3">
+                    <ul>
+                        <li class="title-footer">Gana dinero con nosotros</li>
+                        <li>Vende en Amazon</li>
+                        <li>Vende tus servicios en Amazon</li>
+                        <li>Vende en Amazon Business</li>
+                        <li>Vende Tus App en Amazon</li>
+                        <li>Programa de afiliados</li>
+                        <li>Anuncia tus productos</li>
+                        <li>Publica tu libro de kindle</li>
+                        <li>> Ver mas</li>
+                    </ul>
+                </article>
+                <article class="col-3">
+                    <ul>
+                        <li class="title-footer">producto de pago Amazon</li>
+                        <li>Compra con puntos</li>
+                        <li>Recarga de saldo</li>
+                        <li>Converidor de moneda Amazon</li>
+                    </ul>
+                </article>
+                <article class="col-3">
+                    <ul>
+                        <li class="title-footer">Podemos ayudarte</li>
+                        <li>Tu cuenta</li>
+                        <li>tus pedidos</li>
+                        <li>Tarifa de envios y politicas</li>
+                        <li>Devoluciones y remplazos</li>
+                        <li>Administrar dispositivos</li>
+                        <li>Amazon assistant</li>
+                        <li>Ayuda</li>
+                    </ul>
+                </article>
+                <div class="col-12 text-center">
+                    <img src="./img/imagelogo-white.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
