@@ -13,7 +13,7 @@ const lista = () => {
         productos.innerHTML +=
             `
         <div class="card col-3 mb-1">
-        <img class="card-img-top" src="./img/toalla-negra.jpg" alt="Card image cap">
+        <img class="card-img-top" src="../img/toalla-negra.jpg" alt="Card image cap">
         <div class="card-body">
             <a class="card-title " href="#s">Juego de sábana de cama Mellanni, microfibra </a>
             <p class="card-text">
